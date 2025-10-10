@@ -1,0 +1,71 @@
+<suite name="API TestSuite" thread-count="2" parallel="false">
+    <listeners>
+      <!--  <listener class-name="utilities.ExtentReporter"/>
+       <listener class-name="utilities.AllureReporter"/>
+        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+       <listener class-name="utilities.ExecutionListener"/>
+        <listener class-name="utilities.CombinedReporter"/>-->
+
+
+
+
+        <listener class-name="utilities.ExtentReporter"/>
+
+        <!-- REQUIRED: This listener captures test execution data and generates
+             the raw JSON/XML files in the 'allure-results' directory. -->
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+
+        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+        <!--<listener class-name="utilities.ExecutionListener"/>-->
+        <listener class-name="utilities.CombinedReporter"/>
+    </listeners>
+    <test name="Product Tests">
+        <classes>
+            <class name="testcases.ProductTests"/>
+        </classes>
+    </test>
+
+    <test name="User Tests">
+        <classes>
+            <class name="testcases.UserTests"/>
+        </classes>
+    </test>
+
+    <test name="Cart Tests">
+        <classes>
+            <class name="testcases.CartTests"/>
+        </classes>
+    </test>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="testcases.LoginTests"/>
+        </classes>
+    </test>
+
+    <test name="Schema Tests">
+        <classes>
+            <class name="testcases.SchemaTests"/>
+        </classes>
+    </test>
+
+    <test name="ProductDataDrivenTests">
+        <classes>
+            <class name="testcases.ProductDataDrivenTest"/>
+        </classes>
+    </test>
+
+    <test name="UserDataDrivenTests">
+        <classes>
+            <class name="testcases.UserDataDrivenTest"/>
+        </classes>
+    </test>
+
+    <test name="CartDataDrivenTests">
+        <classes>
+            <class name="testcases.CartDataDrivenTest"/>
+        </classes>
+    </test>
+
+
+</suite>

@@ -1,0 +1,30 @@
+[
+  {
+    "email": "john_doe@example.com",
+    "username": "johndoe",
+    "password": "securepassword123",
+    "firstname": "John",
+    "lastname": "Doe",
+    "city": "New York",
+    "street": "123 Main St",
+    "number": "5",
+    "zipcode": "10001",
+    "phone": "1-212-555-1212",
+    "lat": "-37.3159",
+    "lng": "81.1496"
+  },
+  {
+    "email": "jane_smith@example.com",
+    "username": "janesmith",
+    "password": "anothersecurepwd",
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "city": "Los Angeles",
+    "street": "456 Oak Ave",
+    "number": "10",
+    "zipcode": "90001",
+    "phone": "1-310-555-4567",
+    "lat": "40.3468",
+    "lng": "-109.3331"
+  }
+]

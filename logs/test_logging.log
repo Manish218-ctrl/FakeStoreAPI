@@ -1,0 +1,3471 @@
+Request method:	GET
+Request URI:	https://fakestoreapi.com/carts/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:54 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a1-wvAyaNKAHffOoZd5/I4wHuNFvSs"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rK%2F68bYQaa7m74mGyFVzu%2FYjOdZs5MwNzhzydHbs%2Bq8ZjurcrKm3IYbhR%2FgC6eN3jPO92maRPgJq%2F8EECarJBjo7Fa0BcPMqxq9FJZco21Y%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3faee5c519b0d-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "userId": 1,
+    "date": "2020-03-02T00:00:00.000Z",
+    "products": [
+        {
+            "productId": 1,
+            "quantity": 4
+        },
+        {
+            "productId": 2,
+            "quantity": 1
+        },
+        {
+            "productId": 3,
+            "quantity": 6
+        }
+    ],
+    "__v": 0
+}
+Request method:	GET
+Request URI:	https://fakestoreapi.com/products/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:55 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"16d-ryVvNeDR+OwaJd+i2vi/OPo/G4Y"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=CDNxuIB%2FE4KoRVHLAzyzMu%2FRGHlpmVJ34ES3JVDRHrbTVrcGgo1woD60CR9%2Bz6YvJx9b85Xa8deuLJrut%2FClzXdprItNw4LPh3VaIaVh"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3faf34b4d11b5-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    "price": 109.95,
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+    "rating": {
+        "rate": 3.9,
+        "count": 120
+    }
+}
+Request method:	GET
+Request URI:	https://fakestoreapi.com/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:55 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"120-HNMhv14aQeBJetA9fBvavCZ+gdk"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=sVccStFInLkop1%2FdMGHRZuLDAIiE6OAZpbxnaUw7fssrdrEKIUb0UTo1a20PdTUUYsFZ9aoLRqLXfca5kEXM%2F0%2BW1NmoMsAnMX04OlQ9"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3faf68c5d1ade-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "address": {
+        "geolocation": {
+            "lat": "-37.3159",
+            "long": "81.1496"
+        },
+        "city": "kilcoole",
+        "street": "new road",
+        "number": 7682,
+        "zipcode": "12926-3874"
+    },
+    "id": 1,
+    "email": "john@gmail.com",
+    "username": "johnd",
+    "password": "m38rmF$",
+    "name": {
+        "firstname": "john",
+        "lastname": "doe"
+    },
+    "phone": "1-570-236-7033",
+    "__v": 0
+}
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Wireless Mouse",
+    "price": 25.99,
+    "description": "Ergonomic wireless mouse with adjustable DPI.",
+    "image": "https://i.pravatar.cc/100",
+    "category": "electronic"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:56 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 170
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"aa-2s4ER7pcE44Unm4fsx7WRXafGXE"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Tf6mWKROBu3Joirm1ByLFMZ%2FSE4r%2B4gIJ9XW%2BL1OsY692yPKVGDe3VS4%2FbeG4N%2FoH2nruAQqxcWakJveGhW0s0Is1XebPBaUyrtXPpDbr4s%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fafac927e6f0-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Wireless Mouse",
+    "price": 25.99,
+    "description": "Ergonomic wireless mouse with adjustable DPI.",
+    "image": "https://i.pravatar.cc/100",
+    "category": "electronic"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:57 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=A5L4vDcfqO%2BsJmMrfGC8p%2Fd4%2FuQAjjS2Ua294lkoD1I2IZvL0CESWAaRxNEQmNCCgiMdCnkb%2FvXF%2BAdv9anuTHdo21FF8SuSjV5jVwN2ZT4%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fafe39cd4b31-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Gaming Keyboard",
+    "price": 49.99,
+    "description": "Mechanical gaming keyboard with RGB backlight.",
+    "image": "https://i.pravatar.cc/101",
+    "category": "electronic"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:57 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 172
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"ac-ndnF/0854GxNZKo6UJkXi4Xiqyo"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4YHK4a2gFlXQ0L3%2FhJpbyx6d6z63YcaPBQLyZ%2F6QLqpisDmpavnN9GQlGrN5qYhJyL0vPziv4ySOxsKwPQtKjZFrMKipt50PjYJjcTjz6A0%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb017f78dad4-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Gaming Keyboard",
+    "price": 49.99,
+    "description": "Mechanical gaming keyboard with RGB backlight.",
+    "image": "https://i.pravatar.cc/101",
+    "category": "electronic"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:58 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=bWM2KTT%2F7fu%2BakEE6eyb7hYa19uVZjWsneIcvszYVGlMk4lJSKI4oKLHTFc0KKV0W9gy957xRVZFxqdJ%2BnIpSouO2H1oosUPqBUrXK%2F9Rz8%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb048daae21d-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Bluetooth Headphones",
+    "price": 79.99,
+    "description": "Noise-canceling over-ear headphones with deep bass.",
+    "image": "https://i.pravatar.cc/102",
+    "category": "electronics"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:58 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 183
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"b7-eZiT0+LD+gdUG1stxnuhd1rjbyY"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=a6XdAnYeQ9TVCmQWAsK2b%2Fnd5XHDDmMjBbWM81aj7dVioIJ1DzTBrrzG9hr4oJxidQVhxD5rkILUrJ85sdTkHbGtyxFp%2FRNAXZ8qRNcn"}]}
+Server: cloudflare
+CF-RAY: 98c3fb0799411852-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Bluetooth Headphones",
+    "price": 79.99,
+    "description": "Noise-canceling over-ear headphones with deep bass.",
+    "image": "https://i.pravatar.cc/102",
+    "category": "electronics"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:59 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=TADwOK0ZESuZL9Mnbq9lBepSL45sMhLdXLPJ2BJpMM3KCewzqL2wYu5ytxwY8SXHrELB1Y6PgOrT%2Fiuw793UYTZbhXDwwlUJ056UWe%2BoUFQ%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb0aa86de159-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Smart Watch",
+    "price": 129.99,
+    "description": "Fitness smartwatch with heart rate monitor and GPS.",
+    "image": "https://i.pravatar.cc/103",
+    "category": "wearables"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 173
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"ad-7cxJG2tqqr8I91/KgdGp1zBexAw"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=gJ1fE04AlkA1e7le7filfNOO9FmSdtznGLcrlk8rcmNojeZPnjvNBMGyOJJoihOwJ8sDu5aFU7exJyJS0lYA4lxGyfXUVztyRcuhbjVw"}]}
+Server: cloudflare
+CF-RAY: 98c3fb0ddc63cd5d-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Smart Watch",
+    "price": 129.99,
+    "description": "Fitness smartwatch with heart rate monitor and GPS.",
+    "image": "https://i.pravatar.cc/103",
+    "category": "wearables"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:00 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3Vg5o7J4bQHp12g3F9LUnDo16YQ3wjWQ64ydI1eu5ud31agCtwhyYNL0T%2BMgqufaUDLRkkEqRdZVaSi26%2Bs%2BbSxFBNTgbY2Jsx1LyBA0iPM%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb10d91dcc66-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Portable Speaker",
+    "price": 39.99,
+    "description": "Waterproof Bluetooth speaker with 12-hour battery life.",
+    "image": "https://i.pravatar.cc/104",
+    "category": "audio"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 177
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"b1-ej93fgqpSl1mUbDPlAMk7RGz4cc"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mzD%2FIeNBAFx8TaIDIREGq1%2FZtKeTG1M20pUg23%2BfEiaWHvLWId1Hd1BxEv5I1O%2FhoUXWXSfKubWwKnpQvXdobDsypFp6hTTSxwX214F9IMs%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb139fc8e173-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Portable Speaker",
+    "price": 39.99,
+    "description": "Waterproof Bluetooth speaker with 12-hour battery life.",
+    "image": "https://i.pravatar.cc/104",
+    "category": "audio"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:00 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=SxeukeeOeZf0yx%2Ff7W2wdJaY0%2F3PIvKQ%2FHam0JisIYb6GrGLB0VMUNJvg28JIdTAkn0dlmeASsSM4IOXDZjG8tX2zr5vvNicuytd5GzzPIA%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb16ea3d169b-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "john_doe@example.com",
+    "username": "johndoe",
+    "password": "securepassword123",
+    "name": {
+        "firstname": "John",
+        "lastname": "Doe"
+    },
+    "address": {
+        "city": "New York",
+        "street": "123 Main St",
+        "number": 5,
+        "zipcode": "10001",
+        "geolocation": {
+            "lat": "-37.3159",
+            "lng": "81.1496"
+        }
+    },
+    "phone": "1-212-555-1212"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 9
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"9-hVv0cNJophUD7CGn+ZqXp8tVGo0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=AbUqazoYyenxWRdVEoif%2FHBo5On%2BncJ27chO356ZyWLZ37H0ykBgc6yVCuSW8QuhYl5eYf9h%2BG3YfeWmEWmX9F%2BiGHBzkPON549xSZdoMEc%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb1a3f9de240-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/users/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:02 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2F3NEdnWyQE54FZhXIfYH9VqxOaO6CtOTtEnzzok8ki%2BMMvpbVzb8CgxJwAc6ChrCk43BIjOJDRGMCe4OrlBk4A4rmgNJEGwaNOEua%2BfU"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb1ead9d2503-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "jane_smith@example.com",
+    "username": "janesmith",
+    "password": "anothersecurepwd",
+    "name": {
+        "firstname": "Jane",
+        "lastname": "Smith"
+    },
+    "address": {
+        "city": "Los Angeles",
+        "street": "456 Oak Ave",
+        "number": 10,
+        "zipcode": "90001",
+        "geolocation": {
+            "lat": "40.3468",
+            "lng": "-109.3331"
+        }
+    },
+    "phone": "1-310-555-4567"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:03 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 9
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"9-hVv0cNJophUD7CGn+ZqXp8tVGo0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=QyuSBf%2Fw6Ee2lHspXyItR4N4uDdXXvMLli0KSI2jPLp%2F%2F7pEiT9pfbc%2Bbx4XYG%2FNR3pxnbhpmK%2BRwUYGWKEguvcn3JnOjsckeb5SnpKg"}]}
+Server: cloudflare
+CF-RAY: 98c3fb228e5618a2-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/users/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:03 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=tsCwjMfWK9heagrRa2T%2FLYZaekvqyPB7gvtjAlBApmvqz%2B6eOGdoMQG8rlmJLX2OydO%2BJ1Qo%2FTH2ybXaJeW8g0OZ%2B8KqPDz89rHXUl6vd3o%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb26efe2e21e-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userId": 1,
+    "date": "2024-05-15",
+    "products": [
+        {
+            "productId": 7,
+            "quantity": 1
+        },
+        {
+            "productId": 8,
+            "quantity": 1
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 111
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"6f-74PtJtqzoaTVerz3ukVR1K+Okzo"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=VJBcfJbIpvkR2ZJLw1v5bwPOLwvfhlFN%2B%2Bb0kqGOC5dJVKlffo3lGaSm7FCzC4X1ICiLaQ8%2F%2FUjmRjYVCdWO9CUUSumGhA7p3kx5WkQrTKo%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb2aacf597df-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "userId": 1,
+    "date": "2024-05-15",
+    "products": [
+        {
+            "productId": 7,
+            "quantity": 1
+        },
+        {
+            "productId": 8,
+            "quantity": 1
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/carts/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:04 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=S8q6uXq8tmndo7oCrt2r3OEhdrIV0YjIjBC%2F6gr0hu5OxnushaaJ4nOcg3wZdSK%2FCuYKfAQLURP%2BlkO5mxawzLyTsJc9bT7uwtffMj4B"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb2e0f7b531c-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userId": 2,
+    "date": "2024-05-16",
+    "products": [
+        {
+            "productId": 1,
+            "quantity": 2
+        },
+        {
+            "productId": 3,
+            "quantity": 1
+        },
+        {
+            "productId": 5,
+            "quantity": 3
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:05 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 140
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"8c-+M5kXjHlZppF53Eh/nx6ddhJFl8"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=0Xlue24uaKYYSjaa56xfipXcbuiUYsCryVWamjQJCx9CCqQewohIEBR36y62DwSJhCCwEhQoCzhrG9hZ%2F4zfueUHuLU9sNPBlJAUbUHIU1c%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb320b1d2e37-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "userId": 2,
+    "date": "2024-05-16",
+    "products": [
+        {
+            "productId": 1,
+            "quantity": 2
+        },
+        {
+            "productId": 3,
+            "quantity": 1
+        },
+        {
+            "productId": 5,
+            "quantity": 3
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/carts/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:05 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3pCfOtx8eiTkpS9b8QTpksOoAG14gmhj%2B4EAAxup%2FXNiQj2%2FsAUr36fflYQ7YoySAOjdo4C5snITdwAIHConf1Zp%2FM0RxwUbHDN1TxiL"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb34c97add83-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userId": 3,
+    "date": "2024-05-17",
+    "products": [
+        {
+            "productId": 15,
+            "quantity": 1
+        },
+        {
+            "productId": 20,
+            "quantity": 4
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 113
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"71-rTgBW/crQThU3th3PNpDZ4Pp6FA"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Y8lIKbMUVH3Rc0kNDj5Qnzcaj%2BY0zqkS70tq588cPBU0WsJDv1nSNpgmVUvaJKgMwvZ2g3rdPGvy8yogFA4uqF3aCdoeGR0GJrA7kU%2BfJZY%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb3898bde211-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "userId": 3,
+    "date": "2024-05-17",
+    "products": [
+        {
+            "productId": 15,
+            "quantity": 1
+        },
+        {
+            "productId": 20,
+            "quantity": 4
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/carts/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:07 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=s4x755NTURHXcJSBGPsZbs8ZUJMRjWWV%2BN9b%2FaOvt1jPJAhfdUTbM7%2F90uYpMxoqcCztmj7N8xWtir1ZF9kWSadQkPcoGCi0SjE66RRkRe4%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb3c0dd4e197-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userId": 3,
+    "date": "2024-05-17",
+    "products": [
+        {
+            "productId": 15,
+            "quantity": 1
+        },
+        {
+            "productId": 20,
+            "quantity": 4
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 113
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"71-rTgBW/crQThU3th3PNpDZ4Pp6FA"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Y8lIKbMUVH3Rc0kNDj5Qnzcaj%2BY0zqkS70tq588cPBU0WsJDv1nSNpgmVUvaJKgMwvZ2g3rdPGvy8yogFA4uqF3aCdoeGR0GJrA7kU%2BfJZY%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb3898bde211-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "userId": 3,
+    "date": "2024-05-17",
+    "products": [
+        {
+            "productId": 15,
+            "quantity": 1
+        },
+        {
+            "productId": 20,
+            "quantity": 4
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/carts/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:07 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=s4x755NTURHXcJSBGPsZbs8ZUJMRjWWV%2BN9b%2FaOvt1jPJAhfdUTbM7%2F90uYpMxoqcCztmj7N8xWtir1ZF9kWSadQkPcoGCi0SjE66RRkRe4%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb3c0dd4e197-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Created
+Date: Fri, 10 Oct 2025 06:14:56 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 170
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"aa-2s4ER7pcE44Unm4fsx7WRXafGXE"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Tf6mWKROBu3Joirm1ByLFMZ%2FSE4r%2B4gIJ9XW%2BL1OsY692yPKVGDe3VS4%2FbeG4N%2FoH2nruAQqxcWakJveGhW0s0Is1XebPBaUyrtXPpDbr4s%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fafac927e6f0-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Wireless Mouse",
+    "price": 25.99,
+    "description": "Ergonomic wireless mouse with adjustable DPI.",
+    "image": "https://i.pravatar.cc/100",
+    "category": "electronic"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:57 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=A5L4vDcfqO%2BsJmMrfGC8p%2Fd4%2FuQAjjS2Ua294lkoD1I2IZvL0CESWAaRxNEQmNCCgiMdCnkb%2FvXF%2BAdv9anuTHdo21FF8SuSjV5jVwN2ZT4%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fafe39cd4b31-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Gaming Keyboard",
+    "price": 49.99,
+    "description": "Mechanical gaming keyboard with RGB backlight.",
+    "image": "https://i.pravatar.cc/101",
+    "category": "electronic"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:57 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 172
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"ac-ndnF/0854GxNZKo6UJkXi4Xiqyo"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4YHK4a2gFlXQ0L3%2FhJpbyx6d6z63YcaPBQLyZ%2F6QLqpisDmpavnN9GQlGrN5qYhJyL0vPziv4ySOxsKwPQtKjZFrMKipt50PjYJjcTjz6A0%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb017f78dad4-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Gaming Keyboard",
+    "price": 49.99,
+    "description": "Mechanical gaming keyboard with RGB backlight.",
+    "image": "https://i.pravatar.cc/101",
+    "category": "electronic"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:58 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=bWM2KTT%2F7fu%2BakEE6eyb7hYa19uVZjWsneIcvszYVGlMk4lJSKI4oKLHTFc0KKV0W9gy957xRVZFxqdJ%2BnIpSouO2H1oosUPqBUrXK%2F9Rz8%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb048daae21d-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Bluetooth Headphones",
+    "price": 79.99,
+    "description": "Noise-canceling over-ear headphones with deep bass.",
+    "image": "https://i.pravatar.cc/102",
+    "category": "electronics"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:58 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 183
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"b7-eZiT0+LD+gdUG1stxnuhd1rjbyY"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=a6XdAnYeQ9TVCmQWAsK2b%2Fnd5XHDDmMjBbWM81aj7dVioIJ1DzTBrrzG9hr4oJxidQVhxD5rkILUrJ85sdTkHbGtyxFp%2FRNAXZ8qRNcn"}]}
+Server: cloudflare
+CF-RAY: 98c3fb0799411852-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Bluetooth Headphones",
+    "price": 79.99,
+    "description": "Noise-canceling over-ear headphones with deep bass.",
+    "image": "https://i.pravatar.cc/102",
+    "category": "electronics"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:59 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=TADwOK0ZESuZL9Mnbq9lBepSL45sMhLdXLPJ2BJpMM3KCewzqL2wYu5ytxwY8SXHrELB1Y6PgOrT%2Fiuw793UYTZbhXDwwlUJ056UWe%2BoUFQ%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb0aa86de159-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Smart Watch",
+    "price": 129.99,
+    "description": "Fitness smartwatch with heart rate monitor and GPS.",
+    "image": "https://i.pravatar.cc/103",
+    "category": "wearables"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 173
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"ad-7cxJG2tqqr8I91/KgdGp1zBexAw"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=gJ1fE04AlkA1e7le7filfNOO9FmSdtznGLcrlk8rcmNojeZPnjvNBMGyOJJoihOwJ8sDu5aFU7exJyJS0lYA4lxGyfXUVztyRcuhbjVw"}]}
+Server: cloudflare
+CF-RAY: 98c3fb0ddc63cd5d-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Smart Watch",
+    "price": 129.99,
+    "description": "Fitness smartwatch with heart rate monitor and GPS.",
+    "image": "https://i.pravatar.cc/103",
+    "category": "wearables"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:00 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3Vg5o7J4bQHp12g3F9LUnDo16YQ3wjWQ64ydI1eu5ud31agCtwhyYNL0T%2BMgqufaUDLRkkEqRdZVaSi26%2Bs%2BbSxFBNTgbY2Jsx1LyBA0iPM%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb10d91dcc66-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Portable Speaker",
+    "price": 39.99,
+    "description": "Waterproof Bluetooth speaker with 12-hour battery life.",
+    "image": "https://i.pravatar.cc/104",
+    "category": "audio"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 177
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"b1-ej93fgqpSl1mUbDPlAMk7RGz4cc"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mzD%2FIeNBAFx8TaIDIREGq1%2FZtKeTG1M20pUg23%2BfEiaWHvLWId1Hd1BxEv5I1O%2FhoUXWXSfKubWwKnpQvXdobDsypFp6hTTSxwX214F9IMs%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb139fc8e173-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Portable Speaker",
+    "price": 39.99,
+    "description": "Waterproof Bluetooth speaker with 12-hour battery life.",
+    "image": "https://i.pravatar.cc/104",
+    "category": "audio"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:00 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=SxeukeeOeZf0yx%2Ff7W2wdJaY0%2F3PIvKQ%2FHam0JisIYb6GrGLB0VMUNJvg28JIdTAkn0dlmeASsSM4IOXDZjG8tX2zr5vvNicuytd5GzzPIA%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb16ea3d169b-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "john_doe@example.com",
+    "username": "johndoe",
+    "password": "securepassword123",
+    "name": {
+        "firstname": "John",
+        "lastname": "Doe"
+    },
+    "address": {
+        "city": "New York",
+        "street": "123 Main St",
+        "number": 5,
+        "zipcode": "10001",
+        "geolocation": {
+            "lat": "-37.3159",
+            "lng": "81.1496"
+        }
+    },
+    "phone": "1-212-555-1212"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 9
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"9-hVv0cNJophUD7CGn+ZqXp8tVGo0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=AbUqazoYyenxWRdVEoif%2FHBo5On%2BncJ27chO356ZyWLZ37H0ykBgc6yVCuSW8QuhYl5eYf9h%2BG3YfeWmEWmX9F%2BiGHBzkPON549xSZdoMEc%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb1a3f9de240-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/users/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:02 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2F3NEdnWyQE54FZhXIfYH9VqxOaO6CtOTtEnzzok8ki%2BMMvpbVzb8CgxJwAc6ChrCk43BIjOJDRGMCe4OrlBk4A4rmgNJEGwaNOEua%2BfU"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb1ead9d2503-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "jane_smith@example.com",
+    "username": "janesmith",
+    "password": "anothersecurepwd",
+    "name": {
+        "firstname": "Jane",
+        "lastname": "Smith"
+    },
+    "address": {
+        "city": "Los Angeles",
+        "street": "456 Oak Ave",
+        "number": 10,
+        "zipcode": "90001",
+        "geolocation": {
+            "lat": "40.3468",
+            "lng": "-109.3331"
+        }
+    },
+    "phone": "1-310-555-4567"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:03 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 9
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"9-hVv0cNJophUD7CGn+ZqXp8tVGo0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=QyuSBf%2Fw6Ee2lHspXyItR4N4uDdXXvMLli0KSI2jPLp%2F%2F7pEiT9pfbc%2Bbx4XYG%2FNR3pxnbhpmK%2BRwUYGWKEguvcn3JnOjsckeb5SnpKg"}]}
+Server: cloudflare
+CF-RAY: 98c3fb228e5618a2-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/users/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:03 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=tsCwjMfWK9heagrRa2T%2FLYZaekvqyPB7gvtjAlBApmvqz%2B6eOGdoMQG8rlmJLX2OydO%2BJ1Qo%2FTH2ybXaJeW8g0OZ%2B8KqPDz89rHXUl6vd3o%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb26efe2e21e-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userId": 1,
+    "date": "2024-05-15",
+    "products": [
+        {
+            "productId": 7,
+            "quantity": 1
+        },
+        {
+            "productId": 8,
+            "quantity": 1
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 111
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"6f-74PtJtqzoaTVerz3ukVR1K+Okzo"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=VJBcfJbIpvkR2ZJLw1v5bwPOLwvfhlFN%2B%2Bb0kqGOC5dJVKlffo3lGaSm7FCzC4X1ICiLaQ8%2F%2FUjmRjYVCdWO9CUUSumGhA7p3kx5WkQrTKo%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb2aacf597df-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "userId": 1,
+    "date": "2024-05-15",
+    "products": [
+        {
+            "productId": 7,
+            "quantity": 1
+        },
+        {
+            "productId": 8,
+            "quantity": 1
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/carts/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:04 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=S8q6uXq8tmndo7oCrt2r3OEhdrIV0YjIjBC%2F6gr0hu5OxnushaaJ4nOcg3wZdSK%2FCuYKfAQLURP%2BlkO5mxawzLyTsJc9bT7uwtffMj4B"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb2e0f7b531c-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userId": 2,
+    "date": "2024-05-16",
+    "products": [
+        {
+            "productId": 1,
+            "quantity": 2
+        },
+        {
+            "productId": 3,
+            "quantity": 1
+        },
+        {
+            "productId": 5,
+            "quantity": 3
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:05 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 140
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"8c-+M5kXjHlZppF53Eh/nx6ddhJFl8"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=0Xlue24uaKYYSjaa56xfipXcbuiUYsCryVWamjQJCx9CCqQewohIEBR36y62DwSJhCCwEhQoCzhrG9hZ%2F4zfueUHuLU9sNPBlJAUbUHIU1c%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb320b1d2e37-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "userId": 2,
+    "date": "2024-05-16",
+    "products": [
+        {
+            "productId": 1,
+            "quantity": 2
+        },
+        {
+            "productId": 3,
+            "quantity": 1
+        },
+        {
+            "productId": 5,
+            "quantity": 3
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/carts/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:05 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3pCfOtx8eiTkpS9b8QTpksOoAG14gmhj%2B4EAAxup%2FXNiQj2%2FsAUr36fflYQ7YoySAOjdo4C5snITdwAIHConf1Zp%2FM0RxwUbHDN1TxiL"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb34c97add83-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userId": 3,
+    "date": "2024-05-17",
+    "products": [
+        {
+            "productId": 15,
+            "quantity": 1
+        },
+        {
+            "productId": 20,
+            "quantity": 4
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 113
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"71-rTgBW/crQThU3th3PNpDZ4Pp6FA"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Y8lIKbMUVH3Rc0kNDj5Qnzcaj%2BY0zqkS70tq588cPBU0WsJDv1nSNpgmVUvaJKgMwvZ2g3rdPGvy8yogFA4uqF3aCdoeGR0GJrA7kU%2BfJZY%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb3898bde211-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "userId": 3,
+    "date": "2024-05-17",
+    "products": [
+        {
+            "productId": 15,
+            "quantity": 1
+        },
+        {
+            "productId": 20,
+            "quantity": 4
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/carts/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:07 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=s4x755NTURHXcJSBGPsZbs8ZUJMRjWWV%2BN9b%2FaOvt1jPJAhfdUTbM7%2F90uYpMxoqcCztmj7N8xWtir1ZF9kWSadQkPcoGCi0SjE66RRkRe4%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb3c0dd4e197-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Request method:	GET
+Request URI:	https://fakestoreapi.com/carts/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:54 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a1-wvAyaNKAHffOoZd5/I4wHuNFvSs"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rK%2F68bYQaa7m74mGyFVzu%2FYjOdZs5MwNzhzydHbs%2Bq8ZjurcrKm3IYbhR%2FgC6eN3jPO92maRPgJq%2F8EECarJBjo7Fa0BcPMqxq9FJZco21Y%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3faee5c519b0d-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "userId": 1,
+    "date": "2020-03-02T00:00:00.000Z",
+    "products": [
+        {
+            "productId": 1,
+            "quantity": 4
+        },
+        {
+            "productId": 2,
+            "quantity": 1
+        },
+        {
+            "productId": 3,
+            "quantity": 6
+        }
+    ],
+    "__v": 0
+}
+Request method:	GET
+Request URI:	https://fakestoreapi.com/products/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:55 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"16d-ryVvNeDR+OwaJd+i2vi/OPo/G4Y"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=CDNxuIB%2FE4KoRVHLAzyzMu%2FRGHlpmVJ34ES3JVDRHrbTVrcGgo1woD60CR9%2Bz6YvJx9b85Xa8deuLJrut%2FClzXdprItNw4LPh3VaIaVh"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3faf34b4d11b5-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    "price": 109.95,
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+    "rating": {
+        "rate": 3.9,
+        "count": 120
+    }
+}
+Request method:	GET
+Request URI:	https://fakestoreapi.com/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:55 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"120-HNMhv14aQeBJetA9fBvavCZ+gdk"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=sVccStFInLkop1%2FdMGHRZuLDAIiE6OAZpbxnaUw7fssrdrEKIUb0UTo1a20PdTUUYsFZ9aoLRqLXfca5kEXM%2F0%2BW1NmoMsAnMX04OlQ9"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3faf68c5d1ade-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "address": {
+        "geolocation": {
+            "lat": "-37.3159",
+            "long": "81.1496"
+        },
+        "city": "kilcoole",
+        "street": "new road",
+        "number": 7682,
+        "zipcode": "12926-3874"
+    },
+    "id": 1,
+    "email": "john@gmail.com",
+    "username": "johnd",
+    "password": "m38rmF$",
+    "name": {
+        "firstname": "john",
+        "lastname": "doe"
+    },
+    "phone": "1-570-236-7033",
+    "__v": 0
+}
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Wireless Mouse",
+    "price": 25.99,
+    "description": "Ergonomic wireless mouse with adjustable DPI.",
+    "image": "https://i.pravatar.cc/100",
+    "category": "electronic"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:56 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 170
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"aa-2s4ER7pcE44Unm4fsx7WRXafGXE"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Tf6mWKROBu3Joirm1ByLFMZ%2FSE4r%2B4gIJ9XW%2BL1OsY692yPKVGDe3VS4%2FbeG4N%2FoH2nruAQqxcWakJveGhW0s0Is1XebPBaUyrtXPpDbr4s%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fafac927e6f0-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Wireless Mouse",
+    "price": 25.99,
+    "description": "Ergonomic wireless mouse with adjustable DPI.",
+    "image": "https://i.pravatar.cc/100",
+    "category": "electronic"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:57 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=A5L4vDcfqO%2BsJmMrfGC8p%2Fd4%2FuQAjjS2Ua294lkoD1I2IZvL0CESWAaRxNEQmNCCgiMdCnkb%2FvXF%2BAdv9anuTHdo21FF8SuSjV5jVwN2ZT4%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fafe39cd4b31-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Gaming Keyboard",
+    "price": 49.99,
+    "description": "Mechanical gaming keyboard with RGB backlight.",
+    "image": "https://i.pravatar.cc/101",
+    "category": "electronic"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:57 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 172
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"ac-ndnF/0854GxNZKo6UJkXi4Xiqyo"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4YHK4a2gFlXQ0L3%2FhJpbyx6d6z63YcaPBQLyZ%2F6QLqpisDmpavnN9GQlGrN5qYhJyL0vPziv4ySOxsKwPQtKjZFrMKipt50PjYJjcTjz6A0%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb017f78dad4-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Gaming Keyboard",
+    "price": 49.99,
+    "description": "Mechanical gaming keyboard with RGB backlight.",
+    "image": "https://i.pravatar.cc/101",
+    "category": "electronic"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:58 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=bWM2KTT%2F7fu%2BakEE6eyb7hYa19uVZjWsneIcvszYVGlMk4lJSKI4oKLHTFc0KKV0W9gy957xRVZFxqdJ%2BnIpSouO2H1oosUPqBUrXK%2F9Rz8%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb048daae21d-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Bluetooth Headphones",
+    "price": 79.99,
+    "description": "Noise-canceling over-ear headphones with deep bass.",
+    "image": "https://i.pravatar.cc/102",
+    "category": "electronics"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:58 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 183
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"b7-eZiT0+LD+gdUG1stxnuhd1rjbyY"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=a6XdAnYeQ9TVCmQWAsK2b%2Fnd5XHDDmMjBbWM81aj7dVioIJ1DzTBrrzG9hr4oJxidQVhxD5rkILUrJ85sdTkHbGtyxFp%2FRNAXZ8qRNcn"}]}
+Server: cloudflare
+CF-RAY: 98c3fb0799411852-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Bluetooth Headphones",
+    "price": 79.99,
+    "description": "Noise-canceling over-ear headphones with deep bass.",
+    "image": "https://i.pravatar.cc/102",
+    "category": "electronics"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:59 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=TADwOK0ZESuZL9Mnbq9lBepSL45sMhLdXLPJ2BJpMM3KCewzqL2wYu5ytxwY8SXHrELB1Y6PgOrT%2Fiuw793UYTZbhXDwwlUJ056UWe%2BoUFQ%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb0aa86de159-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Smart Watch",
+    "price": 129.99,
+    "description": "Fitness smartwatch with heart rate monitor and GPS.",
+    "image": "https://i.pravatar.cc/103",
+    "category": "wearables"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 173
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"ad-7cxJG2tqqr8I91/KgdGp1zBexAw"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=gJ1fE04AlkA1e7le7filfNOO9FmSdtznGLcrlk8rcmNojeZPnjvNBMGyOJJoihOwJ8sDu5aFU7exJyJS0lYA4lxGyfXUVztyRcuhbjVw"}]}
+Server: cloudflare
+CF-RAY: 98c3fb0ddc63cd5d-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Smart Watch",
+    "price": 129.99,
+    "description": "Fitness smartwatch with heart rate monitor and GPS.",
+    "image": "https://i.pravatar.cc/103",
+    "category": "wearables"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:00 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3Vg5o7J4bQHp12g3F9LUnDo16YQ3wjWQ64ydI1eu5ud31agCtwhyYNL0T%2BMgqufaUDLRkkEqRdZVaSi26%2Bs%2BbSxFBNTgbY2Jsx1LyBA0iPM%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb10d91dcc66-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Portable Speaker",
+    "price": 39.99,
+    "description": "Waterproof Bluetooth speaker with 12-hour battery life.",
+    "image": "https://i.pravatar.cc/104",
+    "category": "audio"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 177
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"b1-ej93fgqpSl1mUbDPlAMk7RGz4cc"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mzD%2FIeNBAFx8TaIDIREGq1%2FZtKeTG1M20pUg23%2BfEiaWHvLWId1Hd1BxEv5I1O%2FhoUXWXSfKubWwKnpQvXdobDsypFp6hTTSxwX214F9IMs%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb139fc8e173-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Portable Speaker",
+    "price": 39.99,
+    "description": "Waterproof Bluetooth speaker with 12-hour battery life.",
+    "image": "https://i.pravatar.cc/104",
+    "category": "audio"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:00 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=SxeukeeOeZf0yx%2Ff7W2wdJaY0%2F3PIvKQ%2FHam0JisIYb6GrGLB0VMUNJvg28JIdTAkn0dlmeASsSM4IOXDZjG8tX2zr5vvNicuytd5GzzPIA%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb16ea3d169b-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "john_doe@example.com",
+    "username": "johndoe",
+    "password": "securepassword123",
+    "name": {
+        "firstname": "John",
+        "lastname": "Doe"
+    },
+    "address": {
+        "city": "New York",
+        "street": "123 Main St",
+        "number": 5,
+        "zipcode": "10001",
+        "geolocation": {
+            "lat": "-37.3159",
+            "lng": "81.1496"
+        }
+    },
+    "phone": "1-212-555-1212"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 9
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"9-hVv0cNJophUD7CGn+ZqXp8tVGo0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=AbUqazoYyenxWRdVEoif%2FHBo5On%2BncJ27chO356ZyWLZ37H0ykBgc6yVCuSW8QuhYl5eYf9h%2BG3YfeWmEWmX9F%2BiGHBzkPON549xSZdoMEc%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb1a3f9de240-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/users/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:02 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2F3NEdnWyQE54FZhXIfYH9VqxOaO6CtOTtEnzzok8ki%2BMMvpbVzb8CgxJwAc6ChrCk43BIjOJDRGMCe4OrlBk4A4rmgNJEGwaNOEua%2BfU"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb1ead9d2503-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "jane_smith@example.com",
+    "username": "janesmith",
+    "password": "anothersecurepwd",
+    "name": {
+        "firstname": "Jane",
+        "lastname": "Smith"
+    },
+    "address": {
+        "city": "Los Angeles",
+        "street": "456 Oak Ave",
+        "number": 10,
+        "zipcode": "90001",
+        "geolocation": {
+            "lat": "40.3468",
+            "lng": "-109.3331"
+        }
+    },
+    "phone": "1-310-555-4567"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:03 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 9
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"9-hVv0cNJophUD7CGn+ZqXp8tVGo0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=QyuSBf%2Fw6Ee2lHspXyItR4N4uDdXXvMLli0KSI2jPLp%2F%2F7pEiT9pfbc%2Bbx4XYG%2FNR3pxnbhpmK%2BRwUYGWKEguvcn3JnOjsckeb5SnpKg"}]}
+Server: cloudflare
+CF-RAY: 98c3fb228e5618a2-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/users/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:03 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=tsCwjMfWK9heagrRa2T%2FLYZaekvqyPB7gvtjAlBApmvqz%2B6eOGdoMQG8rlmJLX2OydO%2BJ1Qo%2FTH2ybXaJeW8g0OZ%2B8KqPDz89rHXUl6vd3o%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb26efe2e21e-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userId": 1,
+    "date": "2024-05-15",
+    "products": [
+        {
+            "productId": 7,
+            "quantity": 1
+        },
+        {
+            "productId": 8,
+            "quantity": 1
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 111
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"6f-74PtJtqzoaTVerz3ukVR1K+Okzo"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=VJBcfJbIpvkR2ZJLw1v5bwPOLwvfhlFN%2B%2Bb0kqGOC5dJVKlffo3lGaSm7FCzC4X1ICiLaQ8%2F%2FUjmRjYVCdWO9CUUSumGhA7p3kx5WkQrTKo%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb2aacf597df-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "userId": 1,
+    "date": "2024-05-15",
+    "products": [
+        {
+            "productId": 7,
+            "quantity": 1
+        },
+        {
+            "productId": 8,
+            "quantity": 1
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/carts/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:04 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=S8q6uXq8tmndo7oCrt2r3OEhdrIV0YjIjBC%2F6gr0hu5OxnushaaJ4nOcg3wZdSK%2FCuYKfAQLURP%2BlkO5mxawzLyTsJc9bT7uwtffMj4B"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb2e0f7b531c-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userId": 2,
+    "date": "2024-05-16",
+    "products": [
+        {
+            "productId": 1,
+            "quantity": 2
+        },
+        {
+            "productId": 3,
+            "quantity": 1
+        },
+        {
+            "productId": 5,
+            "quantity": 3
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:05 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 140
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"8c-+M5kXjHlZppF53Eh/nx6ddhJFl8"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=0Xlue24uaKYYSjaa56xfipXcbuiUYsCryVWamjQJCx9CCqQewohIEBR36y62DwSJhCCwEhQoCzhrG9hZ%2F4zfueUHuLU9sNPBlJAUbUHIU1c%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb320b1d2e37-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "userId": 2,
+    "date": "2024-05-16",
+    "products": [
+        {
+            "productId": 1,
+            "quantity": 2
+        },
+        {
+            "productId": 3,
+            "quantity": 1
+        },
+        {
+            "productId": 5,
+            "quantity": 3
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/carts/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:05 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3pCfOtx8eiTkpS9b8QTpksOoAG14gmhj%2B4EAAxup%2FXNiQj2%2FsAUr36fflYQ7YoySAOjdo4C5snITdwAIHConf1Zp%2FM0RxwUbHDN1TxiL"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb34c97add83-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userId": 3,
+    "date": "2024-05-17",
+    "products": [
+        {
+            "productId": 15,
+            "quantity": 1
+        },
+        {
+            "productId": 20,
+            "quantity": 4
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 113
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"71-rTgBW/crQThU3th3PNpDZ4Pp6FA"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Y8lIKbMUVH3Rc0kNDj5Qnzcaj%2BY0zqkS70tq588cPBU0WsJDv1nSNpgmVUvaJKgMwvZ2g3rdPGvy8yogFA4uqF3aCdoeGR0GJrA7kU%2BfJZY%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb3898bde211-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "userId": 3,
+    "date": "2024-05-17",
+    "products": [
+        {
+            "productId": 15,
+            "quantity": 1
+        },
+        {
+            "productId": 20,
+            "quantity": 4
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/carts/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:07 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=s4x755NTURHXcJSBGPsZbs8ZUJMRjWWV%2BN9b%2FaOvt1jPJAhfdUTbM7%2F90uYpMxoqcCztmj7N8xWtir1ZF9kWSadQkPcoGCi0SjE66RRkRe4%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb3c0dd4e197-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Request method:	GET
+Request URI:	https://fakestoreapi.com/carts/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:54 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"a1-wvAyaNKAHffOoZd5/I4wHuNFvSs"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rK%2F68bYQaa7m74mGyFVzu%2FYjOdZs5MwNzhzydHbs%2Bq8ZjurcrKm3IYbhR%2FgC6eN3jPO92maRPgJq%2F8EECarJBjo7Fa0BcPMqxq9FJZco21Y%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3faee5c519b0d-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "userId": 1,
+    "date": "2020-03-02T00:00:00.000Z",
+    "products": [
+        {
+            "productId": 1,
+            "quantity": 4
+        },
+        {
+            "productId": 2,
+            "quantity": 1
+        },
+        {
+            "productId": 3,
+            "quantity": 6
+        }
+    ],
+    "__v": 0
+}
+Request method:	GET
+Request URI:	https://fakestoreapi.com/products/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:55 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"16d-ryVvNeDR+OwaJd+i2vi/OPo/G4Y"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=CDNxuIB%2FE4KoRVHLAzyzMu%2FRGHlpmVJ34ES3JVDRHrbTVrcGgo1woD60CR9%2Bz6YvJx9b85Xa8deuLJrut%2FClzXdprItNw4LPh3VaIaVh"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3faf34b4d11b5-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 1,
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    "price": 109.95,
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+    "rating": {
+        "rate": 3.9,
+        "count": 120
+    }
+}
+Request method:	GET
+Request URI:	https://fakestoreapi.com/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:55 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"120-HNMhv14aQeBJetA9fBvavCZ+gdk"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=sVccStFInLkop1%2FdMGHRZuLDAIiE6OAZpbxnaUw7fssrdrEKIUb0UTo1a20PdTUUYsFZ9aoLRqLXfca5kEXM%2F0%2BW1NmoMsAnMX04OlQ9"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3faf68c5d1ade-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "address": {
+        "geolocation": {
+            "lat": "-37.3159",
+            "long": "81.1496"
+        },
+        "city": "kilcoole",
+        "street": "new road",
+        "number": 7682,
+        "zipcode": "12926-3874"
+    },
+    "id": 1,
+    "email": "john@gmail.com",
+    "username": "johnd",
+    "password": "m38rmF$",
+    "name": {
+        "firstname": "john",
+        "lastname": "doe"
+    },
+    "phone": "1-570-236-7033",
+    "__v": 0
+}
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Wireless Mouse",
+    "price": 25.99,
+    "description": "Ergonomic wireless mouse with adjustable DPI.",
+    "image": "https://i.pravatar.cc/100",
+    "category": "electronic"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:56 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 170
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"aa-2s4ER7pcE44Unm4fsx7WRXafGXE"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Tf6mWKROBu3Joirm1ByLFMZ%2FSE4r%2B4gIJ9XW%2BL1OsY692yPKVGDe3VS4%2FbeG4N%2FoH2nruAQqxcWakJveGhW0s0Is1XebPBaUyrtXPpDbr4s%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fafac927e6f0-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Wireless Mouse",
+    "price": 25.99,
+    "description": "Ergonomic wireless mouse with adjustable DPI.",
+    "image": "https://i.pravatar.cc/100",
+    "category": "electronic"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:57 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=A5L4vDcfqO%2BsJmMrfGC8p%2Fd4%2FuQAjjS2Ua294lkoD1I2IZvL0CESWAaRxNEQmNCCgiMdCnkb%2FvXF%2BAdv9anuTHdo21FF8SuSjV5jVwN2ZT4%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fafe39cd4b31-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Gaming Keyboard",
+    "price": 49.99,
+    "description": "Mechanical gaming keyboard with RGB backlight.",
+    "image": "https://i.pravatar.cc/101",
+    "category": "electronic"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:57 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 172
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"ac-ndnF/0854GxNZKo6UJkXi4Xiqyo"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4YHK4a2gFlXQ0L3%2FhJpbyx6d6z63YcaPBQLyZ%2F6QLqpisDmpavnN9GQlGrN5qYhJyL0vPziv4ySOxsKwPQtKjZFrMKipt50PjYJjcTjz6A0%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb017f78dad4-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Gaming Keyboard",
+    "price": 49.99,
+    "description": "Mechanical gaming keyboard with RGB backlight.",
+    "image": "https://i.pravatar.cc/101",
+    "category": "electronic"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:58 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=bWM2KTT%2F7fu%2BakEE6eyb7hYa19uVZjWsneIcvszYVGlMk4lJSKI4oKLHTFc0KKV0W9gy957xRVZFxqdJ%2BnIpSouO2H1oosUPqBUrXK%2F9Rz8%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb048daae21d-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Bluetooth Headphones",
+    "price": 79.99,
+    "description": "Noise-canceling over-ear headphones with deep bass.",
+    "image": "https://i.pravatar.cc/102",
+    "category": "electronics"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:58 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 183
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"b7-eZiT0+LD+gdUG1stxnuhd1rjbyY"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=a6XdAnYeQ9TVCmQWAsK2b%2Fnd5XHDDmMjBbWM81aj7dVioIJ1DzTBrrzG9hr4oJxidQVhxD5rkILUrJ85sdTkHbGtyxFp%2FRNAXZ8qRNcn"}]}
+Server: cloudflare
+CF-RAY: 98c3fb0799411852-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Bluetooth Headphones",
+    "price": 79.99,
+    "description": "Noise-canceling over-ear headphones with deep bass.",
+    "image": "https://i.pravatar.cc/102",
+    "category": "electronics"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:14:59 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=TADwOK0ZESuZL9Mnbq9lBepSL45sMhLdXLPJ2BJpMM3KCewzqL2wYu5ytxwY8SXHrELB1Y6PgOrT%2Fiuw793UYTZbhXDwwlUJ056UWe%2BoUFQ%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb0aa86de159-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Smart Watch",
+    "price": 129.99,
+    "description": "Fitness smartwatch with heart rate monitor and GPS.",
+    "image": "https://i.pravatar.cc/103",
+    "category": "wearables"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:14:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 173
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"ad-7cxJG2tqqr8I91/KgdGp1zBexAw"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=gJ1fE04AlkA1e7le7filfNOO9FmSdtznGLcrlk8rcmNojeZPnjvNBMGyOJJoihOwJ8sDu5aFU7exJyJS0lYA4lxGyfXUVztyRcuhbjVw"}]}
+Server: cloudflare
+CF-RAY: 98c3fb0ddc63cd5d-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Smart Watch",
+    "price": 129.99,
+    "description": "Fitness smartwatch with heart rate monitor and GPS.",
+    "image": "https://i.pravatar.cc/103",
+    "category": "wearables"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:00 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3Vg5o7J4bQHp12g3F9LUnDo16YQ3wjWQ64ydI1eu5ud31agCtwhyYNL0T%2BMgqufaUDLRkkEqRdZVaSi26%2Bs%2BbSxFBNTgbY2Jsx1LyBA0iPM%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb10d91dcc66-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Portable Speaker",
+    "price": 39.99,
+    "description": "Waterproof Bluetooth speaker with 12-hour battery life.",
+    "image": "https://i.pravatar.cc/104",
+    "category": "audio"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 177
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"b1-ej93fgqpSl1mUbDPlAMk7RGz4cc"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mzD%2FIeNBAFx8TaIDIREGq1%2FZtKeTG1M20pUg23%2BfEiaWHvLWId1Hd1BxEv5I1O%2FhoUXWXSfKubWwKnpQvXdobDsypFp6hTTSxwX214F9IMs%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb139fc8e173-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 21,
+    "title": "Portable Speaker",
+    "price": 39.99,
+    "description": "Waterproof Bluetooth speaker with 12-hour battery life.",
+    "image": "https://i.pravatar.cc/104",
+    "category": "audio"
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/products/21
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=21
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:00 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=SxeukeeOeZf0yx%2Ff7W2wdJaY0%2F3PIvKQ%2FHam0JisIYb6GrGLB0VMUNJvg28JIdTAkn0dlmeASsSM4IOXDZjG8tX2zr5vvNicuytd5GzzPIA%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb16ea3d169b-MRS
+alt-svc: h3=":443"; ma=86400
+Request method:	POST
+Request URI:	https://fakestoreapi.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "john_doe@example.com",
+    "username": "johndoe",
+    "password": "securepassword123",
+    "name": {
+        "firstname": "John",
+        "lastname": "Doe"
+    },
+    "address": {
+        "city": "New York",
+        "street": "123 Main St",
+        "number": 5,
+        "zipcode": "10001",
+        "geolocation": {
+            "lat": "-37.3159",
+            "lng": "81.1496"
+        }
+    },
+    "phone": "1-212-555-1212"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 9
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"9-hVv0cNJophUD7CGn+ZqXp8tVGo0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=AbUqazoYyenxWRdVEoif%2FHBo5On%2BncJ27chO356ZyWLZ37H0ykBgc6yVCuSW8QuhYl5eYf9h%2BG3YfeWmEWmX9F%2BiGHBzkPON549xSZdoMEc%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb1a3f9de240-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/users/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:02 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2F3NEdnWyQE54FZhXIfYH9VqxOaO6CtOTtEnzzok8ki%2BMMvpbVzb8CgxJwAc6ChrCk43BIjOJDRGMCe4OrlBk4A4rmgNJEGwaNOEua%2BfU"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb1ead9d2503-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "jane_smith@example.com",
+    "username": "janesmith",
+    "password": "anothersecurepwd",
+    "name": {
+        "firstname": "Jane",
+        "lastname": "Smith"
+    },
+    "address": {
+        "city": "Los Angeles",
+        "street": "456 Oak Ave",
+        "number": 10,
+        "zipcode": "90001",
+        "geolocation": {
+            "lat": "40.3468",
+            "lng": "-109.3331"
+        }
+    },
+    "phone": "1-310-555-4567"
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:03 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 9
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"9-hVv0cNJophUD7CGn+ZqXp8tVGo0"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=QyuSBf%2Fw6Ee2lHspXyItR4N4uDdXXvMLli0KSI2jPLp%2F%2F7pEiT9pfbc%2Bbx4XYG%2FNR3pxnbhpmK%2BRwUYGWKEguvcn3JnOjsckeb5SnpKg"}]}
+Server: cloudflare
+CF-RAY: 98c3fb228e5618a2-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/users/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:03 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=tsCwjMfWK9heagrRa2T%2FLYZaekvqyPB7gvtjAlBApmvqz%2B6eOGdoMQG8rlmJLX2OydO%2BJ1Qo%2FTH2ybXaJeW8g0OZ%2B8KqPDz89rHXUl6vd3o%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb26efe2e21e-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userId": 1,
+    "date": "2024-05-15",
+    "products": [
+        {
+            "productId": 7,
+            "quantity": 1
+        },
+        {
+            "productId": 8,
+            "quantity": 1
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 111
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"6f-74PtJtqzoaTVerz3ukVR1K+Okzo"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=VJBcfJbIpvkR2ZJLw1v5bwPOLwvfhlFN%2B%2Bb0kqGOC5dJVKlffo3lGaSm7FCzC4X1ICiLaQ8%2F%2FUjmRjYVCdWO9CUUSumGhA7p3kx5WkQrTKo%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb2aacf597df-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "userId": 1,
+    "date": "2024-05-15",
+    "products": [
+        {
+            "productId": 7,
+            "quantity": 1
+        },
+        {
+            "productId": 8,
+            "quantity": 1
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/carts/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:04 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=S8q6uXq8tmndo7oCrt2r3OEhdrIV0YjIjBC%2F6gr0hu5OxnushaaJ4nOcg3wZdSK%2FCuYKfAQLURP%2BlkO5mxawzLyTsJc9bT7uwtffMj4B"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb2e0f7b531c-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userId": 2,
+    "date": "2024-05-16",
+    "products": [
+        {
+            "productId": 1,
+            "quantity": 2
+        },
+        {
+            "productId": 3,
+            "quantity": 1
+        },
+        {
+            "productId": 5,
+            "quantity": 3
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:05 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 140
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"8c-+M5kXjHlZppF53Eh/nx6ddhJFl8"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=0Xlue24uaKYYSjaa56xfipXcbuiUYsCryVWamjQJCx9CCqQewohIEBR36y62DwSJhCCwEhQoCzhrG9hZ%2F4zfueUHuLU9sNPBlJAUbUHIU1c%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb320b1d2e37-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "userId": 2,
+    "date": "2024-05-16",
+    "products": [
+        {
+            "productId": 1,
+            "quantity": 2
+        },
+        {
+            "productId": 3,
+            "quantity": 1
+        },
+        {
+            "productId": 5,
+            "quantity": 3
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/carts/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:05 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3pCfOtx8eiTkpS9b8QTpksOoAG14gmhj%2B4EAAxup%2FXNiQj2%2FsAUr36fflYQ7YoySAOjdo4C5snITdwAIHConf1Zp%2FM0RxwUbHDN1TxiL"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb34c97add83-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
+Request method:	POST
+Request URI:	https://fakestoreapi.com/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userId": 3,
+    "date": "2024-05-17",
+    "products": [
+        {
+            "productId": 15,
+            "quantity": 1
+        },
+        {
+            "productId": 20,
+            "quantity": 4
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Fri, 10 Oct 2025 06:15:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 113
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"71-rTgBW/crQThU3th3PNpDZ4Pp6FA"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Y8lIKbMUVH3Rc0kNDj5Qnzcaj%2BY0zqkS70tq588cPBU0WsJDv1nSNpgmVUvaJKgMwvZ2g3rdPGvy8yogFA4uqF3aCdoeGR0GJrA7kU%2BfJZY%3D"}]}
+Server: cloudflare
+CF-RAY: 98c3fb3898bde211-MRS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": 11,
+    "userId": 3,
+    "date": "2024-05-17",
+    "products": [
+        {
+            "productId": 15,
+            "quantity": 1
+        },
+        {
+            "productId": 20,
+            "quantity": 4
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://fakestoreapi.com/carts/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=11
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Oct 2025 06:15:07 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"4-K+iMpCQsduglOsYkdIUQZQMtaDM"
+x-powered-by: Express
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=s4x755NTURHXcJSBGPsZbs8ZUJMRjWWV%2BN9b%2FaOvt1jPJAhfdUTbM7%2F90uYpMxoqcCztmj7N8xWtir1ZF9kWSadQkPcoGCi0SjE66RRkRe4%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 98c3fb3c0dd4e197-MRS
+alt-svc: h3=":443"; ma=86400
+
+null
