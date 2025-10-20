@@ -1,13 +1,11 @@
 pipeline {
     agent any
-
+    
     environment {
-        // Update this path to your actual IntelliJ Maven location
-        MAVEN_PATH = 'C:\\Users\\manis\\.m2\\wrapper\\dists\\apache-maven-3.9.6\\bin\\mvn.cmd'
         JAVA_HOME = 'C:\\Program Files\\Java\\jdk-24'
-        ALLURE_HOME = 'C:\\Program Files\\allure-2.35.1'
+        PATH = "${env.JAVA_HOME}\\bin;${env.PATH}"
     }
-
+    
     stages {
         stage('Checkout') {
             steps {
@@ -15,60 +13,73 @@ pipeline {
                 checkout scm
             }
         }
-
+        
         stage('Build') {
             steps {
                 echo 'Compiling the project...'
-                bat "\"${MAVEN_PATH}\" clean compile"
+                script {
+                    // Use Maven wrapper if available, otherwise use mvn
+                    if (fileExists('mvnw.cmd')) {
+                        bat 'mvnw.cmd clean compile'
+                    } else {
+                        bat 'mvn clean compile'
+                    }
+                }
             }
         }
-
+        
         stage('Run API Tests') {
             steps {
                 echo 'Running API tests...'
-                bat "\"${MAVEN_PATH}\" test"
+                script {
+                    if (fileExists('mvnw.cmd')) {
+                        bat 'mvnw.cmd test'
+                    } else {
+                        bat 'mvn test'
+                    }
+                }
             }
         }
-
+        
         stage('Generate Allure Report') {
             steps {
                 echo 'Generating Allure report...'
-                bat "\"${ALLURE_HOME}\\bin\\allure.bat\" generate allure-results -o allure-report --clean"
+                bat 'allure generate allure-results -o allure-report --clean'
             }
         }
-
+        
         stage('Publish Reports') {
             steps {
                 echo 'Publishing test reports...'
-
+                
                 allure includeProperties: false,
                        jdk: '',
                        results: [[path: 'allure-results']]
-
+                
                 publishHTML([
                     allowMissing: true,
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
                     reportDir: 'reports',
-                    reportFiles: 'ExtentReport*.html',
+                    reportFiles: '*.html',
                     reportName: 'Extent Report',
-                    reportTitles: 'API Test Execution Report'
+                    reportTitles: 'API Test Report'
                 ])
             }
         }
     }
-
+    
     post {
         always {
-            echo 'Archiving test artifacts...'
+            echo 'Archiving artifacts...'
             archiveArtifacts artifacts: 'allure-report/**/*', allowEmptyArchive: true
             archiveArtifacts artifacts: 'reports/**/*', allowEmptyArchive: true
         }
         success {
-            echo '✅ API tests passed! Build successful.'
+            echo '✅ Build succeeded!'
         }
         failure {
-            echo '❌ API tests failed! Check the reports for details.'
+            echo '❌ Build failed!'
         }
     }
 }
