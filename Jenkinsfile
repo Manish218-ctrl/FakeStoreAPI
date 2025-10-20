@@ -1,9 +1,10 @@
-      pipeline {
+pipeline {
     agent any
 
     environment {
-        MAVEN_PATH = 'C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.2\\plugins\\maven\\lib\\maven3\\bin\\mvn.cmd'
-        JAVA_HOME = 'C:\\Users\\manis\\.jdks\\graalvm-jdk-21.0.8'
+        // Update this path to your actual IntelliJ Maven location
+        MAVEN_PATH = 'C:\\Users\\manis\\.m2\\wrapper\\dists\\apache-maven-3.9.6\\bin\\mvn.cmd'
+        JAVA_HOME = 'C:\\Program Files\\Java\\jdk-24'
         ALLURE_HOME = 'C:\\Program Files\\allure-2.35.1'
     }
 
@@ -14,7 +15,7 @@
                 checkout scm
             }
         }
-        
+
         stage('Build') {
             steps {
                 echo 'Compiling the project...'
@@ -40,12 +41,10 @@
             steps {
                 echo 'Publishing test reports...'
 
-                // Publish Allure report
                 allure includeProperties: false,
                        jdk: '',
                        results: [[path: 'allure-results']]
 
-                // Publish HTML reports (if you have ExtentReports)
                 publishHTML([
                     allowMissing: true,
                     alwaysLinkToLastBuild: true,
@@ -66,13 +65,10 @@
             archiveArtifacts artifacts: 'reports/**/*', allowEmptyArchive: true
         }
         success {
-            echo 'API tests passed! Build successful.'
+            echo '✅ API tests passed! Build successful.'
         }
         failure {
-            echo 'API tests failed! Check the reports for details.'
-        }
-        unstable {
-            echo 'Build is unstable. Some tests may have failed.'
+            echo '❌ API tests failed! Check the reports for details.'
         }
     }
 }
