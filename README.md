@@ -103,11 +103,13 @@ A comprehensive Rest Assured-based API Automation Framework designed for testing
 •	Jackson/Gson - JSON processing
 
 
-### **Reports**
+### **Allure Reports**
 
 ![Report](reports/Screenshot%202025-10-29%20153106.png)
 
 ![Report](/reports/Screenshot%202025-10-29%20153226.png)
+
+### **Extent Report**
 
 ![Report](/reports/Screenshot%202025-10-29%20155038.png)
 
