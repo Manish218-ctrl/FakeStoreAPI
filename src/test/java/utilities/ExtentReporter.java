@@ -43,7 +43,7 @@ public class ExtentReporter implements ITestListener, ISuiteListener {
             extent.attachReporter(sparkReporter);
             extent.setSystemInfo("Host Name", "Localhost");
             extent.setSystemInfo("Environment", "QA");
-            extent.setSystemInfo("User", System.getProperty("user.name"));
+            extent.setSystemInfo("User","Automation Tester");
         }
         return extent;
     }
