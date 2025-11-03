@@ -17,23 +17,19 @@ import routes.Routes;
 
 public class CartDataDrivenTest {
 
-    // Uses the dedicated data provider for cart JSON data
     @Test(dataProvider="cartJsonDataProvider", dataProviderClass=utilities.DataProviders.class)
     public void testAddNewCart(Map<String,String> data)
     {
-        // 1. Extract Data
-        // Robustly parse the user ID
         String userIdString = data.get("userId");
         if (userIdString == null || userIdString.trim().isEmpty()) {
             throw new IllegalArgumentException("Test data error: 'userId' field is missing or empty.");
         }
         int userId = Integer.parseInt(userIdString.trim());
-        String date = data.get("date"); // e.g., "2024-05-15"
+        String date = data.get("date"); 
 
-        String productIdsString = data.get("productIds"); // e.g., "7,8"
-        String quantitiesString = data.get("quantities"); // e.g., "1,1"
+        String productIdsString = data.get("productIds"); 
+        String quantitiesString = data.get("quantities"); 
 
-        // 2. Parse Nested List (Products)
         List<CartProduct> products = new ArrayList<>();
         String[] ids = productIdsString.split(",");
         String[] quantities = quantitiesString.split(",");
@@ -44,7 +40,6 @@ public class CartDataDrivenTest {
 
         for (int i = 0; i < ids.length; i++) {
             try {
-                // Trim to remove any spaces introduced by CSV/JSON formatting
                 int productId = Integer.parseInt(ids[i].trim());
                 int quantity = Integer.parseInt(quantities[i].trim());
                 products.add(new CartProduct(productId, quantity));
@@ -53,10 +48,8 @@ public class CartDataDrivenTest {
             }
         }
 
-        // 3. Construct the Main Cart POJO
         Cart newCart = new Cart(userId, date, products);
 
-        // 4. POST Request to Create Cart
         int cartId = given()
                 .contentType(ContentType.JSON)
                 .body(newCart)
@@ -70,7 +63,6 @@ public class CartDataDrivenTest {
 
         System.out.println("Created Cart ID======> " + cartId);
 
-        // 5. DELETE Request to Clean Up
         given()
                 .pathParam("id", cartId)
                 .when()
