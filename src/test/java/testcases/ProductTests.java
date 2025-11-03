@@ -26,7 +26,6 @@ public class ProductTests extends BaseClass {
 
 
 
-    //1) Test to retrieve all products
     @Test
     public void testGetAllProducts()
     {
@@ -40,7 +39,6 @@ public class ProductTests extends BaseClass {
 
     }
 
-    //2) Test to retrieve a single product by ID
     @Test
     public void testGetSingleProductById()
     {
@@ -57,7 +55,6 @@ public class ProductTests extends BaseClass {
     }
 
 
-    //3) Test to retrive a limited number of products
     @Test
     public void testGetLimitedProducts()
     {
@@ -72,7 +69,6 @@ public class ProductTests extends BaseClass {
                 .body("size()",equalTo(3));
     }
 
-    //4) Test to retreive products sorted in descending order
     @Test
     public void testGetSortedProducts()
     {
@@ -88,7 +84,6 @@ public class ProductTests extends BaseClass {
         assertThat(isSortedDescending(productIds), is(true));
     }
 
-    //5) Test to retreive products sorted in Ascending order
     @Test
     public void testGetSortedProductsAsc()
     {
@@ -104,7 +99,6 @@ public class ProductTests extends BaseClass {
         assertThat(isSortedAscending(productIds), is(true));
     }
 
-    //6) Test to get all product categories
     @Test
     public void testGetAllCategories()
     {
@@ -119,7 +113,6 @@ public class ProductTests extends BaseClass {
     }
 
 
-    //7) Test to get products by category
 
     @Test
     public void testGetProductsByCategory()
@@ -139,7 +132,6 @@ public class ProductTests extends BaseClass {
     }
 
 
-    //8) Test to add a new product
     @Test
     public void testAddNewProduct()
     {
@@ -163,7 +155,6 @@ public class ProductTests extends BaseClass {
 
     }
 
-    //9) Test to update an existing product
     @Test
     public void testUpdateProduct()
     {
@@ -185,7 +176,6 @@ public class ProductTests extends BaseClass {
 
     }
 
-    //10) test to delete a product
     @Test
     public void testDeleteProduct()
     {
