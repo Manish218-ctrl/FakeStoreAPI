@@ -58,7 +58,7 @@ public class CartDataDrivenTest {
                 .then()
                 .log().body()
                 .statusCode(isOneOf(200,201))
-                .body("id", notNullValue()) // Verifies the API returns a generated ID
+                .body("id", notNullValue()) 
                 .extract().jsonPath().getInt("id");
 
         System.out.println("Created Cart ID======> " + cartId);
