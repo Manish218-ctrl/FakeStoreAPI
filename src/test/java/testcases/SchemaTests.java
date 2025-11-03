@@ -23,7 +23,7 @@ public class SchemaTests extends BaseClass {
         String schemaPath = "schemas/productSchema.json";
 
         validateSchemaExists(schemaPath);
-
+ 
         given()
                 .pathParam("id", productId)
                 .when()
