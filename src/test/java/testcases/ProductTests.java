@@ -21,7 +21,7 @@ import static utilities.ListUtils.isSortedDescending;
 import java.util.List;
 import  utilities.ListUtils;
 
-public class ProductTests extends BaseClass {
+public class ProductTests extends BaseClass { 
 
 
 
