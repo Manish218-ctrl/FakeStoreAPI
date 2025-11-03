@@ -28,15 +28,14 @@ public class LoginTests extends BaseClass{
                 .post(Routes.AUTH_LOGIN)
                 .then()
                 .log().body()
-                .statusCode(401) // Expecting 401 for unauthorized access
-                .body(equalTo("username or password is incorrect")); //validate the message in the response body
+                .statusCode(401) 
+                .body(equalTo("username or password is incorrect")); 
 
     }
 
     @Test
     public void testValidUserLogin() {
 
-        //Getting valid credentials from config.properties file
         String username = configReader.getProperty("username");
         String password = configReader.getProperty("password");
 
@@ -49,8 +48,8 @@ public class LoginTests extends BaseClass{
                 .post(Routes.AUTH_LOGIN)
                 .then()
                 .log().body()
-                .statusCode(isOneOf(200,201)) // Expecting 401 for unauthorized access
-                .body("token", notNullValue()); // Validate the response token should be null
+                .statusCode(isOneOf(200,201)) 
+                .body("token", notNullValue()); 
 
     }
 }
