@@ -53,7 +53,7 @@ public class CartDataDrivenTest {
         int cartId = given()
                 .contentType(ContentType.JSON)
                 .body(newCart)
-                .when()
+                .when()  
                 .post(Routes.CREATE_CART)
                 .then()
                 .log().body()
