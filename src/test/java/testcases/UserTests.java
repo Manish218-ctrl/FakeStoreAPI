@@ -24,7 +24,6 @@ import routes.Routes;
 public class UserTests extends BaseClass
 {
 
-    //1) Fetch all the users
     @Test
     public void testGetAllUsers()
     {
@@ -42,7 +41,6 @@ public class UserTests extends BaseClass
 
     }
 
-    //2)  Test to fetch a specific user by ID
     @Test
     public void testGetUserById()
     {
@@ -57,7 +55,6 @@ public class UserTests extends BaseClass
     }
 
 
-    //3) Test to fetch a limited number of users
     @Test
     public void testGetUsersWithLimit()
     {
@@ -73,7 +70,6 @@ public class UserTests extends BaseClass
 
     }
 
-    //4) Test to fetch users sorted in descending order
     @Test
     void testGetUsersSorted()
     {
@@ -91,7 +87,6 @@ public class UserTests extends BaseClass
         assertThat(isSortedDescending(userIds), is(true));
     }
 
-    //5) Test to fetch users sorted in ascending order
     @Test
     void testGetUsersSortedAsc()
     {
@@ -111,7 +106,6 @@ public class UserTests extends BaseClass
 
 
 
-    //6) Test to create a new user
 
     @Test
     public void testCreateUser()
@@ -133,7 +127,6 @@ public class UserTests extends BaseClass
 
     }
 
-    //7) Test to update user
 
     @Test
     public void testUpdateUser()
@@ -155,7 +148,6 @@ public class UserTests extends BaseClass
 
     }
 
-    //8) delete user
 
     @Test
     void testDeleteUser()
