@@ -30,7 +30,7 @@ public class CartTests extends BaseClass {
     public void testGetAllCarts() {
         getAllCartsStep();
     }
-
+ 
     @Step("Sending GET request to retrieve all carts")
     private void getAllCartsStep() {
         given()
