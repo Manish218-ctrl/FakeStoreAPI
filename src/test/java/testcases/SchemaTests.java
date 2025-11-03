@@ -22,7 +22,6 @@ public class SchemaTests extends BaseClass {
         int productId = configReader.getIntProperty("productId");
         String schemaPath = "schemas/productSchema.json";
 
-        // Check schema exists
         validateSchemaExists(schemaPath);
 
         given()
@@ -39,7 +38,6 @@ public class SchemaTests extends BaseClass {
         int cartId = configReader.getIntProperty("cartId");
         String schemaPath = "schemas/cartSchema.json";
 
-        // Check schema exists
         validateSchemaExists(schemaPath);
 
         given()
@@ -56,7 +54,6 @@ public class SchemaTests extends BaseClass {
         int userId = configReader.getIntProperty("userId");
         String schemaPath = "schemas/userSchema.json";
 
-        // Check schema exists
         validateSchemaExists(schemaPath);
 
         given()
