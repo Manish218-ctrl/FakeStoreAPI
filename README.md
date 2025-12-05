@@ -6,6 +6,8 @@ A comprehensive Rest Assured-based API Automation Framework designed for testing
 
 ### **Framework Architecture**
 
+• Before automation, core API flows were manually validated in Postman (status codes, payloads, auth, negative cases), then automated in RestAssured to ensure regression coverage.
+
 •	Rest Assured framework built from scratch for API testing with modular design patterns ensuring easy maintenance and extensibility.
 
 •	POJO classes implemented for clean payload handling, improving code readability and reusability across test scenarios.
