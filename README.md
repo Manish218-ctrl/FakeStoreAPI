@@ -20,7 +20,7 @@ A comprehensive Rest Assured-based API Automation Framework designed for testing
 
 •	Data-driven testing capabilities using JSON files combined with TestNG DataProviders for dynamic test execution across multiple datasets.
 
-  [StoreAPI_Testcases.xlsx](https://1drv.ms/x/c/fc18120534c56ab2/IQD1fY1PUNaZSLhHkwubloJAAZyld_5RiEQo6ZiQUU5CVkU?e=5fPm66) contains 230+ test cases; critical flows are automated and traceable to these cases.
+  [StoreAPI_Testcases.xlsx](https://1drv.ms/x/c/fc18120534c56ab2/IQD1fY1PUNaZSLhHkwubloJAAZyld_5RiEQo6ZiQUU5CVkU?e=5fPm66) contains test cases; critical flows are automated and traceable to these cases.
 
 ### **Reporting & Logging**
 
