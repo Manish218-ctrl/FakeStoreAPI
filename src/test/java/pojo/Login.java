@@ -12,6 +12,7 @@ public class Login {
     }
 
     // Getters and Setters
+
     public String getUsername() {
         return username;
     }

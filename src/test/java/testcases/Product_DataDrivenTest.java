@@ -11,9 +11,7 @@ import io.restassured.http.ContentType;
 import pojo.Product;
 import routes.Routes;
 
-public class ProductDataDrivenTest {
-
- 
+public class Product_DataDrivenTest {
 
     @Test(dataProvider="productJsonDataProvider", dataProviderClass=utilities.DataProviders.class)
     public void testAddNewProduct(Map<String,String> data)
@@ -41,7 +39,7 @@ public class ProductDataDrivenTest {
                 .body("title", equalTo(newProduct.getTitle()))
                 .extract().jsonPath().getInt("id"); 
 
-        System.out.println("Product ID======> "+ productId);
+        System.out.println("Product ID==> "+ productId);
 
         given()
                 .pathParam("id",productId)
@@ -50,7 +48,7 @@ public class ProductDataDrivenTest {
                 .then()
                 .statusCode(isOneOf(200,201));
 
-        System.out.println("Deleted Product ID======> "+ productId);
+        System.out.println("Deleted Product ID==> "+ productId);
     }
 
 }

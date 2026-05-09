@@ -18,7 +18,6 @@ public class ConfigReader {
         }
     }
 
-    // Private constructor to prevent instantiation
     public ConfigReader() {}
 
     public static String getProperty(String key) {

@@ -51,19 +51,19 @@
 
     <test name="ProductDataDrivenTests">
         <classes>
-            <class name="testcases.ProductDataDrivenTest"/>
+            <class name="testcases.Product_DataDrivenTest"/>
         </classes>
     </test>
 
     <test name="UserDataDrivenTests">
         <classes>
-            <class name="testcases.UserDataDrivenTest"/>
+            <class name="testcases.User_DataDrivenTest"/>
         </classes>
     </test>
 
     <test name="CartDataDrivenTests">
         <classes>
-            <class name="testcases.CartDataDrivenTest"/>
+            <class name="testcases.Cart_DataDrivenTest"/>
         </classes>
     </test>
 

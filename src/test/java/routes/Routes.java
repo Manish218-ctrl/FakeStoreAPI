@@ -39,7 +39,6 @@ public class Routes {
     public static final String UPDATE_CART = "/carts/{id}";
     public static final String DELETE_CART = "/carts/{id}";
 
-
     //Login
     public static final String AUTH_LOGIN = "/auth/login";
 

@@ -15,18 +15,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class DataProviders {
 
-    // --- Core JSON Reader ---
-    // Reads any JSON file from the testdata folder and returns a 2D array of Maps.
     private Object[][] readJsonData(String fileName) throws IOException {
         String filePath = ".\\testdata\\" + fileName;
 
-        // Use ObjectMapper to read JSON file and map it to a List of Maps
         ObjectMapper objectMapper = new ObjectMapper();
         List<Map<String, String>> dataList = objectMapper.readValue(new File(filePath),
                 new TypeReference<List<Map<String, String>>>() {
                 });
 
-        // Convert List<Map<String, String>> to Object[][] (Each row is a single Map object)
         Object[][] dataArray = new Object[dataList.size()][];
         for (int i = 0; i < dataList.size(); i++) {
             dataArray[i] = new Object[] { dataList.get(i) };
@@ -35,25 +31,20 @@ public class DataProviders {
         return dataArray;
     }
 
-    // --- Core CSV Reader ---
-    // Reads any CSV file from the testdata folder, skipping the header, and returns a 2D array of String arrays.
     private Object[][] readCsvData(String fileName) throws IOException {
         String filePath = ".\\testdata\\" + fileName;
 
         List<String[]> dataList = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-            // Skip the first line (header)
             br.readLine();
 
             String line;
             while ((line = br.readLine()) != null) {
-                // Splits the line by comma. Adjust delimiter if necessary.
                 String[] data = line.split(",");
                 dataList.add(data);
             }
         }
 
-        // Convert List<String[]> to Object[][] (Each row is a String array)
         Object[][] dataArray = new Object[dataList.size()][];
         for (int i = 0; i < dataList.size(); i++) {
             dataArray[i] = dataList.get(i);
@@ -63,7 +54,6 @@ public class DataProviders {
     }
 
 
-    // --- JSON Data Provider Wrappers ---
 
     @DataProvider(name = "productJsonDataProvider")
     public Object[][] productJsonDataProvider() throws IOException {
@@ -79,8 +69,6 @@ public class DataProviders {
     public Object[][] cartJsonDataProvider() throws IOException {
         return readJsonData("cart.json");
     }
-
-    // --- CSV Data Provider Wrappers ---
 
     @DataProvider(name = "productCsvDataProvider")
     public Object[][] productCsvDataProvider() throws IOException {

@@ -229,7 +229,6 @@ public class CartTests extends BaseClass {
                 return false;
             }
         }
-
         return true;
     }
 }

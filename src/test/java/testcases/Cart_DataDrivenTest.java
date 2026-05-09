@@ -15,7 +15,7 @@ import pojo.Cart;
 import pojo.CartProduct;
 import routes.Routes;
 
-public class CartDataDrivenTest {
+public class Cart_DataDrivenTest {
 
     @Test(dataProvider="cartJsonDataProvider", dataProviderClass=utilities.DataProviders.class)
     public void testAddNewCart(Map<String,String> data)

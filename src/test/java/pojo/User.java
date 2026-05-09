@@ -9,7 +9,6 @@ package pojo;
         private Address address;
         private String phone;
 
-        // Constructor
         public User(String email, String username, String password, Name name, Address address, String phone) {
             this.email = email;
             this.username = username;
@@ -20,6 +19,7 @@ package pojo;
         }
 
         // Getters and Setters
+
         public String getEmail() {
             return email;
         }

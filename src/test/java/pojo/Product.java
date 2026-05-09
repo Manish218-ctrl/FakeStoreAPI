@@ -8,7 +8,6 @@ public class Product {
     private String image;
     private String category;
 
-    // Constructor
     public Product(String title, double price, String description, String image, String category) {
         this.title = title;
         this.price = price;
@@ -18,6 +17,7 @@ public class Product {
     }
 
     // Getters and Setters
+
     public String getTitle() {
         return title;
     }

@@ -23,9 +23,6 @@ import  utilities.ListUtils;
 
 public class ProductTests extends BaseClass { 
 
-
-
-
     @Test
     public void testGetAllProducts()
     {
@@ -113,7 +110,6 @@ public class ProductTests extends BaseClass {
     }
 
 
-
     @Test
     public void testGetProductsByCategory()
     {
@@ -130,7 +126,6 @@ public class ProductTests extends BaseClass {
                 .log().body();
 
     }
-
 
     @Test
     public void testAddNewProduct()

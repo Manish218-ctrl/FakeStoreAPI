@@ -2,15 +2,12 @@ package pojo;
 
 public class Address {
 
-
-
     private String city;
     private String street;
     private int number;
     private String zipcode;
     private Geolocation geolocation;
 
-    // Constructor
     public Address(String city, String street, int number, String zipcode, Geolocation geolocation) {
         this.city = city;
         this.street = street;
@@ -20,6 +17,7 @@ public class Address {
     }
 
     // Getters and Setters
+
     public String getCity() {
         return city;
     }

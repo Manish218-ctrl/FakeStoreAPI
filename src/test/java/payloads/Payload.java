@@ -14,9 +14,7 @@ public class Payload {
 
     private static final Faker faker=new Faker();
     private static final String categories[]= {"electronics", "furniture", "clothing", "books", "beauty"};
-
     private static final Random random=new Random();
-
 
     //Product
     public static Product productPayload()
@@ -32,23 +30,18 @@ public class Payload {
     }
 
     //User
-
     public static User userPayload()
     {
-        //name
+
         String firstname=faker.name().firstName();
         String lastname=faker.name().lastName();
 
         Name name=new Name(firstname,lastname);
 
-        //location
         String lat=faker.address().latitude();
         String lng=faker.address().longitude();
 
         Geolocation location=new Geolocation(lat,lng);
-
-
-        //Address
 
         String city=faker.address().city();
         String street=faker.address().streetName();
@@ -56,8 +49,6 @@ public class Payload {
         String zipcode=faker.address().zipCode();
         Address address=new Address(city,street,number,zipcode,location);
 
-
-        //User
         String email=faker.internet().emailAddress();
         String username=faker.name().username();
         String password=faker.internet().password();
@@ -69,32 +60,21 @@ public class Payload {
 
     }
 
-
-
     //Cart
     public static Cart cartPayload(int userId) {
         List<CartProduct> products = new ArrayList<>();
 
-
-        // Adding one random product to the cart
         int productId = random.nextInt(100);
         int quantity = random.nextInt(10) + 1;
 
         CartProduct cartProduct= new CartProduct(productId, quantity);
         products.add(cartProduct);
 
-
-        //new Date()  ----> Returns date like  Wed Feb 19 13:17:45 IST 202
-        // We need to convert this to "yyyy-MM-dd" format in String
-
         SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);// Define output date format
-        String date = outputFormat.format(new Date());//Converting to String
+        String date = outputFormat.format(new Date());
 
         return new Cart(userId, date, products);
     }
-
-
-
 
     //Login
     public static Login loginPayload()
@@ -106,8 +86,5 @@ public class Payload {
         return login;
 
     }
-
-
-
 
 }

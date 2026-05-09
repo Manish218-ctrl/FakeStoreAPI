@@ -102,10 +102,8 @@ public class ExtentReporter implements ITestListener, ISuiteListener {
             suiteNode.info("Failed: " + context.getFailedTests().size());
             suiteNode.info("Skipped: " + context.getSkippedTests().size());
         }
-        // DO NOT FLUSH HERE (handled in onFinish(ISuite))
     }
 
-    // ---- Handle once per entire suite ----
     @Override
     public void onFinish(ISuite suite) {
         reorderSuitesInReport();

@@ -15,7 +15,7 @@ import pojo.Address;
 import pojo.Geolocation;
 import routes.Routes;
 
-public class UserDataDrivenTest {
+public class User_DataDrivenTest {
 
     @Test(dataProvider="userJsonDataProvider", dataProviderClass=utilities.DataProviders.class)
     public void testAddNewUser(Map<String,String> data)

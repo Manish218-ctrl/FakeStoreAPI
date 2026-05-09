@@ -15,15 +15,14 @@ public class CombinedReporter implements ISuiteListener {
 
     @Override
     public void onStart(ISuite suite) {
-        // Optional: do something before suite starts
     }
 
     @Override
     public void onFinish(ISuite suite) {
-        System.out.println("--- Starting Combined Reporter Process ---");
+        System.out.println("Starting Combined Reporter Process");
         openEmailableReport();
         generateAndOpenAllureReport();
-        System.out.println("--- Combined Reporter Process Finished ---");
+        System.out.println("Combined Reporter Process Finished");
     }
 
     private void openEmailableReport() {
@@ -52,7 +51,6 @@ public class CombinedReporter implements ISuiteListener {
 
             System.out.println("Checking for Allure CLI and generating report...");
 
-            // Windows: use cmd /c to ensure Java process can find Allure
             ProcessBuilder pb = new ProcessBuilder(
                     "cmd", "/c", "allure generate " + ALLURE_RESULTS + " --clean -o " + ALLURE_REPORT
             );

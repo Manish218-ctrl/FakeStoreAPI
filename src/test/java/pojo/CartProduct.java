@@ -5,9 +5,6 @@ public class CartProduct {
     private int productId;
     private int quantity;
 
-
-    //constructor
-
     public CartProduct(int productId, int quantity)
     {
         this.productId=productId;
@@ -15,6 +12,7 @@ public class CartProduct {
     }
 
     // Getters and Setters
+
     public int getProductId() {
         return productId;
     }

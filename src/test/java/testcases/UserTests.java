@@ -1,7 +1,6 @@
 package testcases;
 
-
-    import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.greaterThan;
@@ -12,14 +11,12 @@ import java.util.List;
 
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
-
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import payloads.Payload;
 import pojo.User;
 import routes.Routes;
-    import utilities.ConfigReader;
-
+import utilities.ConfigReader;
 
 public class UserTests extends BaseClass
 {
@@ -162,9 +159,6 @@ public class UserTests extends BaseClass
                 .then()
                 .statusCode(200);
     }
-
-
-
 
 }
 

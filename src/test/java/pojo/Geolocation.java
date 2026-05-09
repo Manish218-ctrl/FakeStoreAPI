@@ -6,13 +6,14 @@ public class Geolocation {
     private String lat;
     private String lng;
 
-    // Constructor
+
     public Geolocation(String lat, String lng) {
         this.lat = lat;
         this.lng = lng;
     }
 
     // Getters and Setters
+
     public String getLat() {
         return lat;
     }

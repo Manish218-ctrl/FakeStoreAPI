@@ -9,7 +9,6 @@ public class Cart {
     private String date; // considering date is String
     private List<CartProduct> products;
 
-    // Constructor
     public Cart(int userId, String date, List<CartProduct> products) {
         this.userId = userId;
         this.date = date;
@@ -17,6 +16,7 @@ public class Cart {
     }
 
     // Getters and Setters
+
     public int getUserId() {
         return userId;
     }
