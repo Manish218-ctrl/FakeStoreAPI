@@ -1,86 +1,36 @@
 name: FakeStoreAPI Test Pipeline
 
-'on':
+on:
   push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
-  workflow_dispatch:
+    branches: [ main ]
+
+permissions:
+  contents: write
 
 jobs:
-  api-tests:
-    name: Run API Automation Tests
+  test:
     runs-on: ubuntu-latest
 
-    env:
-      MAVEN_OPTS: -Xmx1024m
-
     steps:
-
-      # ── 1. Checkout Code ─────────────────────────────────────────────
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      # ── 2. Setup Java + Maven Cache ──────────────────────────────────
-      - name: Set up JDK 17
+      - name: Set up Java
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
-          cache: maven
+          java-version: 21
 
-      # ── 3. Build & Execute Tests ─────────────────────────────────────
-      - name: Run API Tests (TestNG)
-        run: mvn clean test --no-transfer-progress
-        continue-on-error: true   # keep reports generation even if tests fail
+      - name: Run tests
+        run: mvn clean test
 
-      # ── 4. Generate Allure Report (using Maven plugin) ───────────────
       - name: Generate Allure Report
-        if: always()
         run: mvn allure:report
 
-      # ── 5. Upload Allure Report ─────────────────────────────────────
-      - name: Upload Allure Report
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: allure-report
-          path: allure-report/
-          retention-days: 7
-
-      # ── 6. Upload Extent Report ─────────────────────────────────────
-      - name: Upload Extent Report
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: extent-report
-          path: reports/
-          retention-days: 7
-
-      # ── 7. Upload TestNG Surefire Results ───────────────────────────
-      - name: Upload Surefire Results
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: surefire-results
-          path: target/surefire-reports/
-          retention-days: 7
-
-      # ── 8. Publish Allure Report to GitHub Pages ────────────────────
       - name: Deploy Allure Report to GitHub Pages
-        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: allure-report
-          destination_dir: allure-report/${{ github.run_number }}
-
-      # ── 9. Publish Test Summary ─────────────────────────────────────
-      - name: Publish TestNG Summary
-        uses: dorny/test-reporter@v1
-        if: always()
-        with:
-          name: API Test Results
-          path: target/surefire-reports/*.xml
-          reporter: java-junit
-          fail-on-error: false
+          publish_dir: target/site/allure-maven-plugin
+          publish_branch: gh-pages
+          force_orphan: true
