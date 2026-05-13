@@ -39,7 +39,7 @@ public class CartTests extends BaseClass {
                 .body("size()", greaterThan(0));
     }
 
-    @Test
+    @Test (groups = {"get"})
     @Description("Verify retrieving a cart by ID returns the correct cart")
     public void testGetCartById() {
         int cartId = ConfigReader.getIntProperty("cartId");
@@ -58,7 +58,7 @@ public class CartTests extends BaseClass {
                 .body("id", equalTo(cartId));
     }
 
-    @Test
+    @Test (groups = {"get"})
     @Description("Verify retrieving carts within a date range returns valid dates")
     public void testGetCartsByDateRange() {
         String startDate = ConfigReader.getProperty("startdate");
@@ -82,7 +82,7 @@ public class CartTests extends BaseClass {
         assertThat(validateCartDatesWithinRange(cartDates, startDate, endDate), is(true));
     }
 
-    @Test
+    @Test (groups = {"get"})
     @Description("Verify retrieving carts for a specific user returns only that user's carts")
     public void testGetUserCart() {
         int userId = ConfigReader.getIntProperty("userId");
@@ -100,7 +100,7 @@ public class CartTests extends BaseClass {
                 .body("userId", everyItem(equalTo(userId)));
     }
 
-    @Test
+    @Test (groups = {"get"})
     @Description("Verify retrieving carts with a limit returns no more than the limit")
     public void testGetCartsWithLimit() {
         int limit = ConfigReader.getIntProperty("limit");
@@ -118,7 +118,7 @@ public class CartTests extends BaseClass {
                 .body("size()", lessThanOrEqualTo(limit));
     }
 
-    @Test
+    @Test (groups = {"get"})
     @Description("Verify retrieving carts sorted in descending order by ID")
     public void testGetCartsSorted() {
         getCartsSortedStep("desc");
@@ -143,7 +143,7 @@ public class CartTests extends BaseClass {
         }
     }
 
-    @Test
+    @Test (groups = {"get"})
     @Description("Verify retrieving carts sorted in ascending order by ID")
     public void testGetCartsSortedAsc() {
         getCartsSortedStep("asc");

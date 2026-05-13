@@ -20,7 +20,7 @@ import utilities.ConfigReader;
 public class UserTests extends BaseClass
 {
 
-    @Test
+    @Test (groups = {"get"})
     public void testGetAllUsers()
     {
         given()
@@ -37,7 +37,7 @@ public class UserTests extends BaseClass
 
     }
 
-    @Test
+    @Test (groups = {"get"})
     public void testGetUserById()
     {
         int userId=ConfigReader.getIntProperty("userId");
@@ -51,7 +51,7 @@ public class UserTests extends BaseClass
     }
 
 
-    @Test
+    @Test (groups = {"get"})
     public void testGetUsersWithLimit()
     {
         int limit=ConfigReader.getIntProperty("limit");
@@ -66,7 +66,7 @@ public class UserTests extends BaseClass
 
     }
 
-    @Test
+    @Test (groups = {"get"})
     void testGetUsersSorted()
     {
         Response response=given()
@@ -83,7 +83,7 @@ public class UserTests extends BaseClass
         assertThat(isSortedDescending(userIds), is(true));
     }
 
-    @Test
+    @Test (groups = {"get"})
     void testGetUsersSortedAsc()
     {
         Response response=given()

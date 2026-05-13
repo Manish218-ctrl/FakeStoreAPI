@@ -30,7 +30,7 @@ public class ProductTests extends BaseClass {
 
     }
 
-    @Test
+    @Test (groups = {"get"})
     public void testGetSingleProductById()
     {
         int productId=ConfigReader.getIntProperty("productId");
@@ -46,7 +46,7 @@ public class ProductTests extends BaseClass {
     }
 
 
-    @Test
+    @Test (groups = {"get"})
     public void testGetLimitedProducts()
     {
         given()
@@ -60,7 +60,7 @@ public class ProductTests extends BaseClass {
                 .body("size()",equalTo(3));
     }
 
-    @Test
+    @Test (groups = {"get"})
     public void testGetSortedProducts()
     {
         Response response=given()
@@ -75,7 +75,7 @@ public class ProductTests extends BaseClass {
         assertThat(isSortedDescending(productIds), is(true));
     }
 
-    @Test
+    @Test (groups = {"get"})
     public void testGetSortedProductsAsc()
     {
         Response response=given()
@@ -90,7 +90,7 @@ public class ProductTests extends BaseClass {
         assertThat(isSortedAscending(productIds), is(true));
     }
 
-    @Test
+    @Test (groups = {"get"})
     public void testGetAllCategories()
     {
         given()
@@ -104,7 +104,7 @@ public class ProductTests extends BaseClass {
     }
 
 
-    @Test
+    @Test (groups = {"get"})
     public void testGetProductsByCategory()
     {
         given()
