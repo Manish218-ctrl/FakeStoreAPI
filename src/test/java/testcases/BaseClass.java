@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeClass;
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
+import org.testng.annotations.BeforeSuite;
 import routes.Routes;
 import utilities.ConfigReader;
 
@@ -18,21 +19,22 @@ import java.time.LocalDate;
 
 public class BaseClass {
 
+
     ConfigReader configReader;
 
     RequestLoggingFilter requestLoggingFilter;
     ResponseLoggingFilter responseLoggingFilter;
 
-    @BeforeClass
+    @BeforeSuite
     public void setup() throws FileNotFoundException
     {
         RestAssured.baseURI=Routes.BASE_URL;
 
         configReader=new ConfigReader();
 
-
-        FileOutputStream fos = new FileOutputStream(".\\logs\\test_logging.log");
+        FileOutputStream fos = new FileOutputStream("./logs/test_logging.log");
         PrintStream log = new PrintStream(fos, true);
+
 
         requestLoggingFilter = new RequestLoggingFilter(log);
         responseLoggingFilter = new ResponseLoggingFilter(log);
