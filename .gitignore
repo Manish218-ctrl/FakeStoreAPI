@@ -41,3 +41,8 @@ build/
 # IntelliJ IDEA
 .idea/
 *.iml
+
+allure-results/
+allure-report/
+logs/
+target/
