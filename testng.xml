@@ -1,4 +1,4 @@
-<suite name="API TestSuite" thread-count="2" parallel="false">
+<suite name="API TestSuite" thread-count="2" parallel="classes">
     <listeners>
       <!--  <listener class-name="utilities.ExtentReporter"/>
        <listener class-name="utilities.AllureReporter"/>
@@ -7,12 +7,8 @@
         <listener class-name="utilities.CombinedReporter"/>-->
 
 
-
-
         <listener class-name="utilities.ExtentReporter"/>
 
-        <!-- REQUIRED: This listener captures test execution data and generates
-             the raw JSON/XML files in the 'allure-results' directory. -->
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
 
         <listener class-name="org.testng.reporters.EmailableReporter2"/>
