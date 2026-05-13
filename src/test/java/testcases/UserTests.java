@@ -9,7 +9,6 @@ import static org.hamcrest.Matchers.notNullValue;
 
 import java.util.List;
 
-import org.testng.ITestContext;
 import org.testng.annotations.Test;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;

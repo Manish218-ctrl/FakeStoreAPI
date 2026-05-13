@@ -1,11 +1,9 @@
-package utilities;
-
 import java.io.InputStream;
 import java.util.Properties;
 
 public class ConfigReader {
 
-    private static Properties properties = new Properties();
+    private static final Properties properties = new Properties();
 
     static {
         try (InputStream input = ConfigReader.class
@@ -19,8 +17,7 @@ public class ConfigReader {
             properties.load(input);
 
         } catch (Exception e) {
-            e.printStackTrace();
-            throw new RuntimeException("Failed to load config.properties file");
+            throw new RuntimeException("Failed to load config.properties file", e);
         }
     }
 

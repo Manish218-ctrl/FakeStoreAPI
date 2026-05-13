@@ -17,8 +17,6 @@ import payloads.Payload;
 import pojo.Cart;
 import routes.Routes;
 import utilities.ConfigReader;
-import static utilities.ListUtils.isSortedAscending;
-import static utilities.ListUtils.isSortedDescending;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;

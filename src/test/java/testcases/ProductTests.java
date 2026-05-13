@@ -1,8 +1,6 @@
 package testcases;
 
 
-import io.restassured.RestAssured;
-import org.testng.annotations.BeforeClass;
 import pojo.Product;
 import routes.Routes;
 import utilities.ConfigReader;
@@ -10,16 +8,12 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import payloads.Payload;
 
-import org.testng.ITestContext;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static utilities.ListUtils.isSortedAscending;
-import static utilities.ListUtils.isSortedDescending;
 
 import java.util.List;
-import  utilities.ListUtils;
 
 public class ProductTests extends BaseClass { 
 
