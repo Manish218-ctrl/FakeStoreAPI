@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.List;
 
+import io.restassured.builder.RequestSpecBuilder;
 import org.testng.annotations.BeforeClass;
 
 import io.restassured.RestAssured;
@@ -29,6 +30,10 @@ public class BaseClass {
     public void setup() throws FileNotFoundException
     {
         RestAssured.baseURI=Routes.BASE_URL;
+
+        RestAssured.requestSpecification = new RequestSpecBuilder()
+                .addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+                .build();
 
         configReader=new ConfigReader();
 

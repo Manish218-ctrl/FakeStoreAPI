@@ -16,7 +16,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class DataProviders {
 
     private Object[][] readJsonData(String fileName) throws IOException {
-        String filePath = ".\\testdata\\" + fileName;
+        String filePath = "testdata/" + fileName;  // FIXED: was ".\\testdata\\"
 
         ObjectMapper objectMapper = new ObjectMapper();
         List<Map<String, String>> dataList = objectMapper.readValue(new File(filePath),
@@ -32,7 +32,7 @@ public class DataProviders {
     }
 
     private Object[][] readCsvData(String fileName) throws IOException {
-        String filePath = ".\\testdata\\" + fileName;
+        String filePath = "testdata/" + fileName;  // FIXED: was ".\\testdata\\"
 
         List<String[]> dataList = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
@@ -52,8 +52,6 @@ public class DataProviders {
 
         return dataArray;
     }
-
-
 
     @DataProvider(name = "productJsonDataProvider")
     public Object[][] productJsonDataProvider() throws IOException {
