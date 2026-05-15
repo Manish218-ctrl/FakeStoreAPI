@@ -44,16 +44,21 @@ public class CombinedReporter implements ISuiteListener {
             File resultsDir = new File(ALLURE_RESULTS);
             File reportDir = new File(ALLURE_REPORT);
 
-            if (!resultsDir.exists() || resultsDir.listFiles().length == 0) {
+            File[] files = resultsDir.listFiles();
+            if (!resultsDir.exists() || files == null || files.length == 0) {
                 System.out.println("Allure results folder is empty. No report generated!");
                 return;
             }
 
             System.out.println("Checking for Allure CLI and generating report...");
 
-            ProcessBuilder pb = new ProcessBuilder(
-                    "cmd", "/c", "allure generate " + ALLURE_RESULTS + " --clean -o " + ALLURE_REPORT
-            );
+            boolean isWindows = System.getProperty("os.name").toLowerCase().contains("win");
+            String command = "allure generate " + ALLURE_RESULTS + " --clean -o " + ALLURE_REPORT;
+
+            ProcessBuilder pb = isWindows
+                    ? new ProcessBuilder("cmd", "/c", command)
+                    : new ProcessBuilder("bash", "-c", command);
+
             pb.inheritIO();
             Process process = pb.start();
             int exitCode = process.waitFor();
@@ -68,7 +73,7 @@ public class CombinedReporter implements ISuiteListener {
                 Desktop.getDesktop().browse(indexHtml.toURI());
                 System.out.println("Allure report opened successfully at: " + indexHtml.getAbsolutePath());
             } else {
-                System.out.println("Allure index.html not found after generation!");
+                System.out.println("Allure report generated at: " + indexHtml.getAbsolutePath());
             }
 
         } catch (IOException | InterruptedException e) {
